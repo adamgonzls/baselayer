@@ -70,6 +70,7 @@ ul {
 
 .panel {
 	max-width: 1000px;
+	padding: 40px;
 }
 
 .hero {
@@ -91,10 +92,27 @@ ul {
 	text-align: center;
 }
 
-.content {
+.container {
 	background-color: pink;
-	padding: 40px;
+	/*display: flex;*/
 }
+
+.container > * {
+	display: inline-block;
+	width: calc(50% - 40px);
+}
+
+/*.container > img {
+	float: left;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+
+.container > img:after {
+	clear: both;
+}*/
+
 
 /*.details p {
 	text-align: justify;
@@ -116,4 +134,18 @@ ul {
 *****************************************/
 
 
+/****************************************
+  Media Queries
+*****************************************/
 
+@media only screen and (max-width: 768px) {
+	
+	body {
+		background-color: red;
+	}
+
+	.container > * {
+		display: block;
+		width: 100%;
+	}
+}
