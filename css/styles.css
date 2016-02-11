@@ -29,8 +29,17 @@ h1 {
 	margin: 0;
 }
 
+h2 {
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
 ul {
 	list-style-type: none;
+	padding: 0;
 }
 
 
@@ -58,13 +67,20 @@ ul {
 	flex: 1;
 }
 
-.main-header li {
+.main-header li,
+.social li {
 	display: inline-block;
 }
 
-.main-header li a {
+.main-header li a,
+.info-bar li a {
+	font-size: 1em;
 	padding: 10px;
 	text-decoration: none;
+}
+
+.main-header li a:hover {
+	border-bottom: 2px solid #00ff00;
 }
 
 
@@ -80,7 +96,6 @@ ul {
 	background-position: center center;
 	width: 100%;
 	height: 350px;
-	/*margin: 0 auto;*/
 }
 
 .hero img {
@@ -92,40 +107,68 @@ ul {
 	text-align: center;
 }
 
-.container {
-	background-color: pink;
-	/*display: flex;*/
-}
-
 .container > * {
 	display: inline-block;
-	width: calc(50% - 40px);
+	width: calc(50% - 5px);
+	vertical-align: middle;
 }
 
-/*.container > img {
-	float: left;
-	max-width: 100%;
-	width: auto;
-	height: auto;
+.details {
+	text-align: center;
+	padding: 20px;
 }
 
-.container > img:after {
-	clear: both;
-}*/
+.details > h2 {
+	font-size: 1.5em;
+	padding-bottom: 10px;
+}
 
+.details p {
+	font-weight: 100;
+}
 
-/*.details p {
-	text-align: justify;
-}*/
 
 .pennant {
 	color: #fff;
 	font-size: 1.5em;
 	font-weight: 100;
 	background-color: #000039;
-	
 	text-transform: uppercase;
 	padding: 20px 0;
+}
+
+.main-footer {
+	background-color: #000039;
+}
+
+.info-bar {
+	display: flex;
+	color: #fff;
+	font-size: 1.5em;
+	padding: 40px;
+}
+
+.info-bar > h1 {
+	text-transform: uppercase;
+	font-weight: 100;
+}
+
+.info-bar span {
+	border-bottom: 2px solid #00ff00;
+}
+
+.info-bar ul {
+	margin: 0;
+}
+
+.info-bar i {
+	display: inline-block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.social {
+	padding-left: 40px;
 }
 
 
@@ -140,12 +183,63 @@ ul {
 
 @media only screen and (max-width: 768px) {
 	
-	body {
-		background-color: red;
-	}
-
 	.container > * {
 		display: block;
 		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.main-header {
+		display: block;
+		text-align: center;
+	}
+
+	.info-bar {
+		display: block;
+		text-align: center;
+	}
+
+	.social {
+		padding-left: 0;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	
+	.main-header li a {
+		/*font-size: .8em;*/
+		padding: 5px;
+	}
+
+	.logo img {
+		max-width: 90%;
+	}
+
+	.panel {
+		padding: 5px;
+	}
+
+	.pennant {
+		font-size: 1em;
+	}
+
+	.info-bar {
+		font-size: 1em;
+	}
+
+	.info-bar ul {
+		padding: 0;
+	}
+
+}
+
+@media only screen and (max-width: 240px) {
+	.main-header li a {
+		font-size: .8em;
+	}
+
+	.pennant {
+		font-size: .8em;
 	}
 }
