@@ -41,7 +41,6 @@ ul {
 	padding: 0;
 }
 
-
 /****************************************
   Helpers
 *****************************************/
@@ -185,7 +184,6 @@ ul {
 *****************************************/
 
 @media only screen and (max-width: 768px) {
-	
 	.container > * {
 		display: block;
 		width: 100%;
@@ -213,7 +211,6 @@ ul {
 }
 
 @media only screen and (max-width: 480px) {
-	
 	.main-header li a {
 		padding: 5px;
 	}
