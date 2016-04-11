@@ -86,18 +86,22 @@ ul {
 	padding: 40px;
 }
 
-#pic-slider {
+.pic-slider {
 	
 }
 
+.pic-slider img {
+	max-height: 500px;
+}
 
-.hero {
+
+/*.hero {
 	background: url(../images/core-1000px.jpg);
 	background-size: cover;
 	background-position: center center;
 	width: 100%;
 	height: 500px;
-}
+}*/
 
 .hero img {
 	width: 100%;
