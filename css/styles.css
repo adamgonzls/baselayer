@@ -56,6 +56,7 @@ ul {
 
 .main-header {
 	position: fixed;
+	z-index: 999;
 	display: flex;
 	background-color: #fff;
 	width: 100%;
@@ -87,24 +88,13 @@ ul {
 }
 
 .pic-slider {
-	
+	padding-top: 50px;
 }
 
 .pic-slider img {
 	max-height: 500px;
-}
-
-
-/*.hero {
-	background: url(../images/core-1000px.jpg);
-	background-size: cover;
-	background-position: center center;
-	width: 100%;
-	height: 500px;
-}*/
-
-.hero img {
-	width: 100%;
+	margin: 0 auto;
+	max-width: 100%;
 }
 
 .intro {
@@ -137,7 +127,6 @@ ul {
 .details p {
 	font-weight: 100;
 }
-
 
 .pennant {
 	color: #fff;
@@ -176,6 +165,10 @@ ul {
 	display: inline-block;
 	padding-top: 20px;
 	padding-bottom: 20px;
+}
+
+.info-bar i:hover {
+	color: #00ff00;
 }
 
 .social {
